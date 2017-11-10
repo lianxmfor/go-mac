@@ -1,5 +1,5 @@
 package main
-
+// 欢迎大家技术交流QQ:1034552569
 import (
 	"C"
 	"fmt"
