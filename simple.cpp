@@ -1,5 +1,5 @@
 #include "simple.h"
-
+//æ¬¢è¿å¤§å®¶æŠ€æœ¯äº¤æµQQ:1034552569
 void get_disk_serial_number(char **number)
 {
     char         VolumeInfo[100];
@@ -31,7 +31,7 @@ void get_mem_size(char **_size)
     sprintf(*_size , "%d",  stMem.dwTotalPhys/(1024*1024));
    // return stMem.dwTotalPhys / (1024 * 1024);
 }
-void get_mac_address(char **macAdress) //ÓĞmacµØÖ·¾Í·µ»ØµÚÒ»¸ö £¬ Ã»ÓĞµÄ»°¾Í·µ»Ø¿Õ×Ö·û´®¡£
+void get_mac_address(char **macAdress) //æœ‰macåœ°å€å°±è¿”å›ç¬¬ä¸€ä¸ª ï¼Œ æ²¡æœ‰çš„è¯å°±è¿”å›ç©ºå­—ç¬¦ä¸²ã€‚
 {
     int i = 0;
     int ret = 0;
@@ -50,7 +50,7 @@ void get_mac_address(char **macAdress) //ÓĞmacµØÖ·¾Í·µ»ØµÚÒ»¸ö £¬ Ã»ÓĞµÄ»°¾Í·µ»Ø
     bool flag = false;
     if (ERROR_SUCCESS == ret)
     {
-        if(pIpAdapterInfo) //  Ã¿¸öÍø¿¨¶ÔÓ¦Ò»¸öÁ´±í½áµã , Ö»ÒªµÚÒ»¸ö
+        if(pIpAdapterInfo) //  æ¯ä¸ªç½‘å¡å¯¹åº”ä¸€ä¸ªé“¾è¡¨ç»“ç‚¹ , åªè¦ç¬¬ä¸€ä¸ª
         {
             char str[100];
             for (i = 0; i < pIpAdapterInfo->AddressLength; i++)
